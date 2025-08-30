@@ -1,7 +1,7 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
-public class Vehiculo {
+public class AplicacionDespacho {
 
     // Método para leer texto
     private static String leerTexto(Scanner sc, String mensaje) {
@@ -20,8 +20,7 @@ public class Vehiculo {
                 sc.nextLine(); // limpiar buffer
                 valido = true;
             } catch (InputMismatchException e) {
-                System.out.println("
-                Error: Ingrese un número válido.");
+                System.out.println("Error: Ingrese un número válido.");
                 sc.nextLine(); // descarta entrada inválida
             }
         }
